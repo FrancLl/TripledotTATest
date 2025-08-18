@@ -11,5 +11,5 @@ PresetManager:
       m_ManagedTypeFallback: 
     second:
     - m_Preset: {fileID: 2655988077585873504, guid: 45d0395567a0e76428b204acb3b4aee1, type: 2}
-      m_Filter: DefaultImage
+      m_Filter: 
       m_Disabled: 0
