@@ -24,7 +24,6 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
         {
             if (navBarButton != navbarButtonSelected)
             {
-                Debug.Log("locked");
                 navBarButton.selected = false;
             }
             else
@@ -59,7 +58,6 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
 
     void MoveButtonSelector(NavBarButtonView buttonDestination)
     {
-        Debug.Log("Move");
         buttonSelectorRT.DOAnchorPos(new Vector2(buttonDestination.selectedPosition, 0), selectorTravelTime);
     }
 
