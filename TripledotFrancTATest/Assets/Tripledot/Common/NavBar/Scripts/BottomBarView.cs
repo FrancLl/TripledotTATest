@@ -11,17 +11,11 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
     [SerializeField] List<NavBarButtonView> navBarButtons = new List<NavBarButtonView>();
     [SerializeField] Animator buttonSelector;
     [SerializeField] RectTransform buttonSelectorRT;
-    float buttonSelectorDestination = 0.0f;
-    bool aButtonIsSelected = false;
+    [SerializeField] float selectorTravelTime;
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Not selected");
-        foreach (NavBarButtonView navBarButton in navBarButtons)
-        {
-            navBarButton.selected = false;
-        }
-        NavBarButtonsState();
+        DisselectAllButtons();
     }
 
     public void ButtonPressed(NavBarButtonView navbarButtonSelected)
@@ -30,6 +24,7 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
         {
             if (navBarButton != navbarButtonSelected)
             {
+                Debug.Log("locked");
                 navBarButton.selected = false;
             }
             else
@@ -37,6 +32,7 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
                 navBarButton.selected = true;
             }
         }
+
         NavBarButtonsState();
     }
 
@@ -45,40 +41,34 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
     {
         for (int i = 0; i < navBarButtons.Count; i++)
         {
-            Debug.Log(i);
-            Debug.Log("COUNT = " + navBarButtons.Count);
 
             if (navBarButtons[i].selected)
             {
-                //DisselectOthers(navBarButtons[i]);
                 MoveButtonSelector(navBarButtons[i]);
                 buttonSelector.SetBool("Enabled", true);
                 ContentToggle.SetTrigger("Activated");
-                Debug.Log(navBarButtons[i]);
                 break;
             }
             else if (i == navBarButtons.Count - 1 && !navBarButtons[i].selected)
             {
-                Debug.Log("Closed");
                 ContentToggle.SetTrigger("Closed");
                 buttonSelector.SetBool("Enabled", false);
             }
         }
     }
 
-    /*void DisselectOthers(NavBarButtonView selectedButton)
-    {
-        foreach(NavBarButtonView navBarButton in navBarButtons)
-        {
-            if (navBarButton != selectedButton)
-            {
-                Debug.Log("Disselected");
-                navBarButton.selected = false;
-            }
-        }
-    }*/
     void MoveButtonSelector(NavBarButtonView buttonDestination)
     {
         Debug.Log("Move");
+        buttonSelectorRT.DOAnchorPos(new Vector2(buttonDestination.selectedPosition, 0), selectorTravelTime);
+    }
+
+    public void DisselectAllButtons()
+    {
+        foreach (NavBarButtonView navBarButton in navBarButtons)
+        {
+            navBarButton.selected = false;
+        }
+        NavBarButtonsState();
     }
 }
