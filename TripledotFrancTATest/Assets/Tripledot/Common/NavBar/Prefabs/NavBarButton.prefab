@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 2445751114717330104}
   - component: {fileID: 4893800976539565173}
   - component: {fileID: 2904454281089300837}
+  - component: {fileID: 1562608595696479449}
   m_Layer: 5
   m_Name: NavBarButton
   m_TagString: Untagged
@@ -385,6 +386,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1562608595696479449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3808467631645428732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc84c9b5112d3fc458bdc5ff390742cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedPosition: 0
+  selected: 0
 --- !u!1 &4667247113024203295
 GameObject:
   m_ObjectHideFlags: 0
