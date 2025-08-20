@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2100000, guid: e7a2cc4c6db0ae94bac5cf42440575b5, type: 2}
+    - target: {fileID: 7642748585512644656, guid: 5cbe133a5d4feeb41a51b6766282d9f1, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 4096
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
