@@ -299,9 +299,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.33333334
-    functionName: DestroyPopup
+    functionName: DestroyUIObject
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 9200677714395247275, guid: 68ff8d68f80662f49a42c82e2780a816, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
