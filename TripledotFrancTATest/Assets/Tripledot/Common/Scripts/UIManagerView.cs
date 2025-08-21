@@ -7,8 +7,14 @@ public class UIManagerView : MonoBehaviour
     [SerializeField] Transform screenTransform;
     [SerializeField] Transform windowTransform;
 
+    //NavBarManager
+    bool navBarVisible = true;
+    [SerializeField] Animator navBarAnimator;
+
     private void Awake()
     {
+        navBarVisible = navBarAnimator.GetBool("Visible");
+
         Canvas.ForceUpdateCanvases();
     }
 
@@ -25,5 +31,19 @@ public class UIManagerView : MonoBehaviour
     public void DeleteUIObjectView(GameObject uiObject)
     {
         Destroy(uiObject);
+    }
+
+    public void NavBarChangeState()
+    {
+        if (navBarVisible == true)
+        {
+            navBarVisible = false;
+        }
+        else
+        {
+            navBarVisible = true;
+        }
+
+        navBarAnimator.SetBool("Visible", navBarVisible);
     }
 }

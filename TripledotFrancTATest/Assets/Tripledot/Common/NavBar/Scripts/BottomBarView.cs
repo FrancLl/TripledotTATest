@@ -50,7 +50,6 @@ public class BottomBarView : MonoBehaviour
             }
             else if (i == navBarButtons.Count - 1 && !navBarButtons[i].selected)
             {
-                Debug.Log("Close");
                 ContentToggle.SetTrigger("Closed");
                 buttonSelector.SetBool("Enabled", false);
             }

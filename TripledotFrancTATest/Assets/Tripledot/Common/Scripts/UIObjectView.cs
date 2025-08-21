@@ -4,7 +4,6 @@ public class UIObjectView : UIManagerView
 {
     private void Start()
     {
-        Debug.Log("Canvas Reload");
         Canvas.ForceUpdateCanvases();
     }
 

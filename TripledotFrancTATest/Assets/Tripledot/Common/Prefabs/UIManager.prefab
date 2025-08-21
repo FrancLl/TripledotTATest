@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenTransform: {fileID: 864947075509252929}
   windowTransform: {fileID: 7144183086299511924}
+  navBarAnimator: {fileID: 5798869980327283184}
 --- !u!1 &5092790215666880455
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +284,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1707088397517115269}
+    - target: {fileID: 3738805142338608407, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3879805443921136177, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -363,6 +368,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -30.005
       objectReference: {fileID: 0}
+    - target: {fileID: 6262125644849275812, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566195041104033016, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6743607421678030917, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
       propertyPath: m_Name
       value: TopBar
@@ -437,6 +450,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7515160009958239679, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7656794736047585837, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959178190736595962, guid: 89abbb435b021034d85dfc1835c6edba, type: 3}
@@ -593,6 +610,62 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -79.005005
       objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1707088397517115269}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 802553461640233950}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NavBarChangeState
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: navBarButtonTextChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManagerView, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScreenHomeView, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478679307729459953, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580541860084950440, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: navBarAnimator
+      value: 
+      objectReference: {fileID: 5798869980327283184}
     - target: {fileID: 2739750945077576907, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -769,6 +842,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -54.005005
       objectReference: {fileID: 0}
+    - target: {fileID: 7077738861535824303, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: navBarAnimator
+      value: 
+      objectReference: {fileID: 5798869980327283184}
     - target: {fileID: 7461798925245528802, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -805,11 +882,26 @@ PrefabInstance:
       propertyPath: m_Padding.m_Bottom
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 8893135377454345848, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+      propertyPath: m_text
+      value: Hide NavBar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+--- !u!114 &802553461640233950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7077738861535824303, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
+  m_PrefabInstance: {fileID: 7573387583493868145}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5522e067cffa76740864b2eb53a5fbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &3476869709662471548 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6438530591573856013, guid: 6da221fe47abf8f49872bfe94d40b969, type: 3}
@@ -1012,6 +1104,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78eab3bb218bf0149be72092d5316712, type: 3}
+--- !u!95 &5798869980327283184 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4250700573376936935, guid: 78eab3bb218bf0149be72092d5316712, type: 3}
+  m_PrefabInstance: {fileID: 7675325788228153879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7900542714052054419 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 513517692333096836, guid: 78eab3bb218bf0149be72092d5316712, type: 3}
