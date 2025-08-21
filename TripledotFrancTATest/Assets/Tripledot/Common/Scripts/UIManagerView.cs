@@ -7,11 +7,11 @@ public class UIManagerView : MonoBehaviour
     //I should create a UIObjectView custom editor to hide this serialized fields from the UIObject classes but I preferred to use my time on other stuff of the test.
     [SerializeField] Transform screenTransform;
     [SerializeField] Transform windowTransform;
-    [SerializeField] Animator navBarAnimator;
+    [SerializeField] private Animator navBarAnimator;
 
 
 
-    private void Awake()
+    protected virtual void Awake()
     {
         navBarVisible = navBarAnimator.GetBool("Visible");
 
