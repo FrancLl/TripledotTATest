@@ -5,7 +5,7 @@ using DG.Tweening;
 using UnityEngine.EventSystems;
 using JetBrains.Annotations;
 
-public class BottomBarView : MonoBehaviour, IPointerDownHandler
+public class BottomBarView : MonoBehaviour
 {
     [SerializeField] Animator ContentToggle;
     [SerializeField] List<NavBarButtonView> navBarButtons = new List<NavBarButtonView>();
@@ -13,7 +13,7 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
     [SerializeField] RectTransform buttonSelectorRT;
     [SerializeField] float selectorTravelTime;
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OutsideClick()
     {
         DisselectAllButtons();
     }
@@ -50,6 +50,7 @@ public class BottomBarView : MonoBehaviour, IPointerDownHandler
             }
             else if (i == navBarButtons.Count - 1 && !navBarButtons[i].selected)
             {
+                Debug.Log("Close");
                 ContentToggle.SetTrigger("Closed");
                 buttonSelector.SetBool("Enabled", false);
             }
