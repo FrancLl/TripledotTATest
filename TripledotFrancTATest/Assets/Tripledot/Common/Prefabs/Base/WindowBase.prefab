@@ -173,7 +173,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6323996125049757837}
   - component: {fileID: 6696794855876376072}
-  - component: {fileID: 8584173916089651821}
   m_Layer: 5
   m_Name: WindowBase
   m_TagString: Untagged
@@ -224,18 +223,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8584173916089651821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3815756169095178438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39366497b72ff634584b176cf3bedbbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4961865320027469458
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.4509804}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
@@ -825,6 +812,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7270933623600910358}
     m_Modifications:
+    - target: {fileID: 2366876229014490039, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366876229014490039, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366876229014490039, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 162.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366876229014490039, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366876229014490039, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 156.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366876229014490039, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65
+      objectReference: {fileID: 0}
     - target: {fileID: 7333610830929270727, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
       propertyPath: m_Name
       value: ButtonGreen
@@ -847,7 +858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8627192075883514646, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 156.045
+      value: 81.045
       objectReference: {fileID: 0}
     - target: {fileID: 8627192075883514646, guid: 8427431ce8c1c5843a0f1c242b6857d7, type: 3}
       propertyPath: m_AnchoredPosition.y
