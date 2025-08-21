@@ -548,7 +548,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 502143032112814574, guid: 13fb4d7c74f17344b99019b4939aa3a3, type: 3}
       propertyPath: m_Name
-      value: TXT_TextTemplate
+      value: TXT_ButtonText
       objectReference: {fileID: 0}
     - target: {fileID: 502143032112814574, guid: 13fb4d7c74f17344b99019b4939aa3a3, type: 3}
       propertyPath: m_IsActive
@@ -584,7 +584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743507028647739671, guid: 13fb4d7c74f17344b99019b4939aa3a3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 125
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 743507028647739671, guid: 13fb4d7c74f17344b99019b4939aa3a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -620,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743507028647739671, guid: 13fb4d7c74f17344b99019b4939aa3a3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -62.5
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 743507028647739671, guid: 13fb4d7c74f17344b99019b4939aa3a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

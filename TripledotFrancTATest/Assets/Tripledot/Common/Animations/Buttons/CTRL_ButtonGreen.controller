@@ -158,7 +158,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
   m_FloatCurves:
   - serializedVersion: 2
     curve:
@@ -568,7 +568,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 4236636097
+      path: 498403551
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -1153,6 +1153,27 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Color.a
+    path: Background/Shine
+    classID: 114
+    script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
         value: 0.9
         inSlope: 0
         outSlope: 0
@@ -1164,7 +1185,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -1185,7 +1206,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -1206,30 +1227,9 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
     classID: 224
     script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_Color.a
-    path: Background/Shine
-    classID: 114
-    script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
     flags: 0
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
@@ -1587,7 +1587,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
   m_FloatCurves:
   - serializedVersion: 2
     curve:
@@ -1997,7 +1997,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 4236636097
+      path: 498403551
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -2614,7 +2614,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -2635,7 +2635,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -2656,7 +2656,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: TXT_TextTemplate
+    path: TXT_ButtonText
     classID: 224
     script: {fileID: 0}
     flags: 0
