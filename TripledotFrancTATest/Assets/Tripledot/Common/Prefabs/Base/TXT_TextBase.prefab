@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4744316501453641004}
   - component: {fileID: 1559187262993276695}
   m_Layer: 5
-  m_Name: TXT_TextTemplate
+  m_Name: TXT_TextBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
