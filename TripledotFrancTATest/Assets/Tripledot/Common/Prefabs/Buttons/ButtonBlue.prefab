@@ -45,12 +45,16 @@ PrefabInstance:
       value: 162.09
       objectReference: {fileID: 0}
     - target: {fileID: 2420185985477026827, guid: 5cbe133a5d4feeb41a51b6766282d9f1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 2420185985477026827, guid: 5cbe133a5d4feeb41a51b6766282d9f1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 156.045
       objectReference: {fileID: 0}
     - target: {fileID: 2420185985477026827, guid: 5cbe133a5d4feeb41a51b6766282d9f1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -62.5
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 2968601898632988316, guid: 5cbe133a5d4feeb41a51b6766282d9f1, type: 3}
       propertyPath: m_Pivot.x
